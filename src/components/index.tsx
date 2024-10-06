@@ -1,30 +1,29 @@
-import "../assets/css/style.css"
+import "../assets/css/style.css";
 
-import Navigation from "./navigation/Navigation.tsx";
-import Home from "./home/Home.tsx";
-import About from "./about/About.tsx";
-import Benefits from "./benefits/Benefits.tsx";
-import AreaOfExpertise from "./areaOfExpertise/AreaOfExpertise.tsx";
-import MyAppointments from "./myAppointments/MyAppointments.tsx";
-import OnsiteOrOnline from "./onsiteOrOnline/onsiteOrOnline.tsx";
-import Contact from "./contact/Contact.tsx";
-import Footer from "./footer/Footer.tsx";
+import Navigation from "./navigation/Navigation";
+import Home from "./home/Home";
+import About from "./about/About";
+import Benefits from "./benefits/Benefits";
+import AreaOfExpertise from "./areaOfExpertise/AreaOfExpertise";
+import MyAppointments from "./myAppointments/MyAppointments";
+import OnsiteOrOnline from "./onsiteOrOnline/onsiteOrOnline";
+import Contact from "./contact/Contact";
+import Footer from "./footer/Footer";
 
-function MyApp() {
-
+const MyApp: React.FC = () => {
     return (
         <div className="tudo">
-            <Navigation/>
-            <Home/>
-            <About/>
-            <Benefits/>
-            <AreaOfExpertise/>
-            <MyAppointments/>
-            <OnsiteOrOnline/>
-            <Contact/>
-            <Footer/>
+            <Navigation />
+            <Home />
+            <About />
+            <Benefits />
+            <AreaOfExpertise />
+            <MyAppointments />
+            <OnsiteOrOnline />
+            <Contact />
+            <Footer />
         </div>
-    )
+    );
 }
 
-export default MyApp
+export default MyApp;

@@ -1,22 +1,23 @@
 import React from "react";
-
-import "./style.css"
+import "./style.css";
 
 const About: React.FC = () => {
-
     return (
         <section className="section-about">
-            <div className="about-container">
-                <h3>Sobre mim</h3>
+            <header>
+                <h2>Sobre Mim</h2>
+            </header>
+            <article className="about-container">
                 <p>
-                    Atualmente atuando na área de desenvolvimento web com NodeJS e React.Atuei por mais de 10 anos no
-                    setor financeiro, com especialização em finanças, auditoria e controladoria.Me preparando todos os
-                    dias para ser
-                    uma grande desenvolvedora Full Stack.
+                    Atualmente atuando na área de desenvolvimento web com NodeJS e React. Atuei por mais de 10 anos no
+                    setor financeiro, com especialização em finanças, auditoria e controladoria. Me preparando todos os
+                    dias para ser uma grande desenvolvedora Full Stack.
                 </p>
-            </div>
-            <div className="about-container">
-                <h3>Minha Abordagem</h3>
+            </article>
+            <header>
+                <h2>Minha Abordagem</h2>
+            </header>
+            <article className="about-container">
                 <p>
                     <strong>Terapia Cognitivo Comportamental:</strong> é uma abordagem terapêutica baseada na teoria
                     de que nossos pensamentos, emoções e comportamentos estão interligados e podem influenciar um ao
@@ -30,9 +31,9 @@ const About: React.FC = () => {
                     valores e objetivos pessoais para ter uma vida mais significativa, satisfatória e alinhada ao
                     que é importante para si. Permitindo-lhes ser mais presentes e conscientes em suas vidas.
                 </p>
-            </div>
+            </article>
         </section>
-    )
+    );
 }
 
 export default About;

@@ -17,25 +17,29 @@
     gap: 1rem;
 }
 
-.section-area-of-expertise .area-of-expertise-container .area-of-expertise-box {
+.section-area-of-expertise .area-of-expertise-box {
     flex: 0 0 calc(20% - 20px);
     text-align: center;
     border-radius: 2rem;
     padding: 1rem;
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
 }
 
-.section-area-of-expertise .area-of-expertise-container .area-of-expertise-box img {
+.section-area-of-expertise .area-of-expertise-box:hover {
+    transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+}
+
+.section-area-of-expertise .area-of-expertise-box img {
     height: 3rem;
     width: 3rem;
     vertical-align: middle;
     margin-block: 1rem;
 }
 
-.section-area-of-expertise .area-of-expertise-container .area-of-expertise-box p {
+.section-area-of-expertise .area-of-expertise-box p {
     font-size: 1.6rem;
     line-height: 2rem;
 }
-
 
 @media (max-width: 558px) {
     .section-area-of-expertise h3 {
@@ -47,12 +51,12 @@
         gap: 0.5rem;
     }
 
-    .section-area-of-expertise .area-of-expertise-container .area-of-expertise-box img {
+    .section-area-of-expertise .area-of-expertise-box img {
         height: 2rem;
         width: 2rem;
     }
 
-    .section-area-of-expertise .area-of-expertise-container .area-of-expertise-box p {
+    .section-area-of-expertise .area-of-expertise-box p {
         font-size: 1.2rem;
         line-height: 1.4rem;
     }
@@ -68,13 +72,13 @@
         gap: 1.5rem;
     }
 
-    .section-area-of-expertise .area-of-expertise-container .area-of-expertise-box img {
+    .section-area-of-expertise .area-of-expertise-box img {
         height: 4rem;
         width: 4rem;
         margin-bottom: 0.5rem;
     }
 
-    .section-area-of-expertise .area-of-expertise-container .area-of-expertise-box p {
+    .section-area-of-expertise .area-of-expertise-box p {
         font-size: 1.2rem;
         line-height: 1.6rem;
     }
@@ -85,23 +89,18 @@
         gap: 2rem;
     }
 
-    .section-area-of-expertise h3 {
-        font-size: 3rem;
-        line-height: 3.6rem;
-    }
-
-    .section-area-of-expertise .area-of-expertise-container .area-of-expertise-box {
+    .section-area-of-expertise .area-of-expertise-box {
         min-width: 15rem;
         padding: 1.5rem;
     }
 
-    .section-area-of-expertise .area-of-expertise-container .area-of-expertise-box img {
+    .section-area-of-expertise .area-of-expertise-box img {
         height: 5rem;
         width: 5rem;
         margin-bottom: 1rem;
     }
 
-    .section-area-of-expertise .area-of-expertise-container .area-of-expertise-box p {
+    .section-area-of-expertise .area-of-expertise-box p {
         font-size: 1.6rem;
         line-height: 2rem;
     }

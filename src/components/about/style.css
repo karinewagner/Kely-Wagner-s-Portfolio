@@ -1,46 +1,45 @@
 .section-about {
     max-width: 100rem;
     margin: 0 auto;
+    padding: 2rem; /* Adiciona um espaçamento interno */
 }
 
 .section-about .about-container {
-    flex: 0 0 calc(50% - 10px);
+    display: flex;
+    flex-direction: column; /* Mantenha em coluna para melhor organização */
     margin-bottom: 20px;
 }
 
-.section-about .about-container h3 {
-    font-size: 2rem;
-    line-height: 2.6rem;
-    margin-top: 1rem;
+.section-about header {
+    margin-top: 1.5rem; /* Espaço entre os cabeçalhos */
 }
 
-.section-about .about-container p {
+.section-about h2 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    color: #333; /* Ajuste a cor conforme necessário */
+}
+
+.section-about p {
     font-size: 1.4rem;
     line-height: 1.8rem;
     text-align: justify;
     margin-block: 1rem;
+    color: #555; /* Ajuste a cor conforme necessário */
 }
 
-.section-about .about-container p strong {
+.section-about p strong {
     font-size: 1.6rem;
-    line-height: 1.8rem;
 }
 
+/* Estilização responsiva */
 @media (max-width: 468px) {
-    .section-about .about-container h3 {
-        font-size: 1.6rem;
-        line-height: 1.8rem;
+    .section-about h2 {
+        font-size: 1.8rem;
     }
 
-    .section-about .about-container p {
+    .section-about p {
         font-size: 1.2rem;
-        line-height: 1.6rem;
-        margin-block: 0.5rem;
-    }
-
-    .section-about .about-container p strong {
-        font-size: 1.2rem;
-        line-height: 1.6rem;
     }
 }
 
@@ -49,19 +48,11 @@
         flex-basis: 100%;
     }
 
-    .section-about .about-container h3 {
+    .section-about h2 {
         font-size: 3rem;
-        line-height: 3.6rem;
     }
 
-    .section-about .about-container p {
+    .section-about p {
         font-size: 1.6rem;
-        line-height: 2rem;
-        margin-block: 1.5rem;
-    }
-
-    .section-about .about-container p strong {
-        font-size: 1.8rem;
-        line-height: 2rem;
     }
 }

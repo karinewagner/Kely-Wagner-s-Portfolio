@@ -4,7 +4,7 @@ import "./style.css"
 
 import IconInst from "../../assets/icons/icons-instagram.png";
 import IconLink from "../../assets/icons/icons-linkedin.png";
-import ProfilePicture from "../../assets/imagem/imagem-kely.jfif";
+import ProfilePicture from "../../assets/images/imagem-kely.jfif";
 
 const Home: React.FC = () => {
 
