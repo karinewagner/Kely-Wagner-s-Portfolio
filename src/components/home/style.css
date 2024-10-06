@@ -1,0 +1,109 @@
+.section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 auto;
+}
+
+.section-title .title-container h2 {
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 3rem;
+    margin-bottom: 1rem;
+}
+
+.section-title .title-container ol {
+    margin-block: 0.5rem;
+    margin-left: 1rem;
+}
+
+.section-title .title-container ol li{
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+
+.section-title .title-container ul {
+    display: flex;
+    margin-left: 2rem;
+    gap: 1rem;
+}
+
+.section-title .title-container ul li a img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.section-title .img-profile img {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+}
+
+@media (max-width: 468px) {
+    .section-title {
+        gap: 1rem;
+    }
+
+    .section-title .title-container h2 {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        margin-bottom: 0;
+    }
+
+    .section-title .title-container ol li {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
+
+    .section-title .img-profile img {
+        width: 12rem;
+        height: 12rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .section-title .title-container h2 {
+        font-size: 3rem;
+        line-height: 3.6rem;
+        margin-bottom: 1rem;
+    }
+
+    .section-title .title-container ol li {
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+
+    .section-title .title-container ul li a img {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .section-title .img-profile img {
+        height: 25rem;
+        width: 25rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .section-title .title-container h2 {
+        font-size: 4.6rem;
+        line-height: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    .section-title .title-container ol {
+        margin-block: 1rem;
+        margin-left: 2rem;
+    }
+
+    .section-title .title-container ol li{
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
+
+    .section-title .img-profile img {
+        height: 30rem;
+        width: 30rem;
+    }
+}

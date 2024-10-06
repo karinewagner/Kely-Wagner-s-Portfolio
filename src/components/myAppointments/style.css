@@ -1,0 +1,72 @@
+.section-my-appointments {
+    text-align: left;
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+.section-my-appointments h3 {
+    font-size: 2rem;
+    line-height: 2.6rem;
+    margin-bottom: 1rem;
+}
+
+.section-my-appointments ol li p {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    text-align: justify;
+    margin-block: 1rem;
+}
+
+.section-my-appointments ol li strong {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+}
+
+@media (max-width: 468px) {
+    .section-my-appointments h3 {
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .section-my-appointments ol li p {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        margin-block: 0.5rem;
+    }
+
+    .section-my-appointments ol li strong {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .section-my-appointments h3 {
+        font-size: 3rem;
+        line-height: 3.6rem;
+        margin-bottom: 2rem;
+    }
+
+    .section-my-appointments ol {
+        margin-block: 0.5rem;
+        margin-left: 1rem;
+    }
+
+    .section-my-appointments ol li {
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .section-my-appointments ol li strong {
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+
+    .section-my-appointments ol li p {
+        font-size: 1.6rem;
+        line-height: 2rem;
+        margin-top: 0.5rem;
+    }
+}

@@ -1,0 +1,107 @@
+.section-benefits {
+    text-align: left;
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+.section-benefits h3 {
+    font-size: 2rem;
+    line-height: 2.6rem;
+    margin-block: 1rem;
+}
+
+.section-benefits .benefits-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.section-benefits .benefits-container .benefits-box {
+    flex: 0 0 calc(20% - 20px);
+    text-align: center;
+    background-color: #fbfbfb;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+.section-benefits .benefits-container .benefits-box img {
+    height: 3rem;
+    width: 3rem;
+    vertical-align: middle;
+    margin-block: 1rem;
+}
+
+.section-benefits .benefits-container .benefits-box p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+
+@media (max-width: 558px) {
+    .section-benefits h3 {
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+    }
+
+    .section-benefits .benefits-container {
+        gap: 0.5rem;
+    }
+
+    .section-benefits .benefits-container .benefits-box img {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .section-benefits .benefits-container .benefits-box p {
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .section-benefits h3 {
+        font-size: 3rem;
+        line-height: 3.6rem;
+    }
+
+    .section-benefits .benefits-container {
+        gap: 1.5rem;
+    }
+
+    .section-benefits .benefits-container .benefits-box img {
+        height: 4rem;
+        width: 4rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .section-benefits .benefits-container .benefits-box p {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .section-benefits .benefits-container {
+        gap: 2rem;
+    }
+
+    .section-benefits h3 {
+        font-size: 3rem;
+        line-height: 3.6rem;
+    }
+
+    .section-benefits .benefits-container .benefits-box {
+        padding: 1.5rem;
+    }
+
+    .section-benefits .benefits-container .benefits-box img {
+        height: 5rem;
+        width: 5rem;
+        margin-bottom: 1rem;
+    }
+
+    .section-benefits .benefits-container .benefits-box p {
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+}

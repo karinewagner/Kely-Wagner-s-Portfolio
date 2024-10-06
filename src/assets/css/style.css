@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    background-color: rgba(138, 156, 236, 0.2);
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #464646;
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+/*Mobile First*/
+.tudo {
+    margin: 0 16px 0 16px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/*@media (min-width: 768px) {*/
+/*    .tudo {*/
+/*        margin: 0 32px 0 32px;*/
+/*    }*/
+/*}*/
+
+/*@media (min-width: 1025px) {*/
+/*    .tudo {*/
+/*        margin: 0 auto;*/
+/*    }*/
+/*}*/

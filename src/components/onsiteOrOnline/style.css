@@ -1,0 +1,106 @@
+.section-onsite-or-online {
+    text-align: left;
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+.section-onsite-or-online h3 {
+    font-size: 2rem;
+    line-height: 2.6rem;
+    margin-top: 1rem;
+}
+
+.section-onsite-or-online .onsite-or-online-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.section-onsite-or-online .onsite-or-online-container .onsite-or-online-box {
+    flex: 0 0 calc(20% - 20px);
+    text-align: center;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+.section-onsite-or-online .onsite-or-online-container .onsite-or-online-box img {
+    height: 3rem;
+    width: 3rem;
+    vertical-align: middle;
+    margin-block: 1rem;
+}
+
+.section-onsite-or-online .onsite-or-online-container .onsite-or-online-box p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+
+@media (max-width: 558px) {
+    .section-onsite-or-online h3 {
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+    }
+
+    .section-onsite-or-online .onsite-or-online-container {
+        gap: 0.5rem;
+    }
+
+    .section-onsite-or-online .onsite-or-online-container .onsite-or-online-box img {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .section-onsite-or-online .onsite-or-online-container .onsite-or-online-box p {
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .section-onsite-or-online h3 {
+        font-size: 3rem;
+        line-height: 3.6rem;
+    }
+
+    .section-onsite-or-online .onsite-or-online-container {
+        gap: 1.5rem;
+    }
+
+    .section-onsite-or-online .onsite-or-online-container .onsite-or-online-box img {
+        height: 4rem;
+        width: 4rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .section-onsite-or-online .onsite-or-online-container .onsite-or-online-box p {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .section-onsite-or-online .onsite-or-online-container {
+        gap: 2rem;
+    }
+
+    .section-onsite-or-online h3 {
+        font-size: 3rem;
+        line-height: 3.6rem;
+    }
+
+    .section-onsite-or-online .onsite-or-online-container .onsite-or-online-box {
+        padding: 1.5rem;
+    }
+
+    .section-onsite-or-online .onsite-or-online-container .onsite-or-online-box img {
+        height: 5rem;
+        width: 5rem;
+        margin-bottom: 1rem;
+    }
+
+    .section-onsite-or-online .onsite-or-online-container .onsite-or-online-box p {
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+}

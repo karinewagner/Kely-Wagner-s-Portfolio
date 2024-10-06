@@ -1,0 +1,67 @@
+.section-about {
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+.section-about .about-container {
+    flex: 0 0 calc(50% - 10px);
+    margin-bottom: 20px;
+}
+
+.section-about .about-container h3 {
+    font-size: 2rem;
+    line-height: 2.6rem;
+    margin-top: 1rem;
+}
+
+.section-about .about-container p {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    text-align: justify;
+    margin-block: 1rem;
+}
+
+.section-about .about-container p strong {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+}
+
+@media (max-width: 468px) {
+    .section-about .about-container h3 {
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+    }
+
+    .section-about .about-container p {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        margin-block: 0.5rem;
+    }
+
+    .section-about .about-container p strong {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .section-about .about-container {
+        flex-basis: 100%;
+    }
+
+    .section-about .about-container h3 {
+        font-size: 3rem;
+        line-height: 3.6rem;
+    }
+
+    .section-about .about-container p {
+        font-size: 1.6rem;
+        line-height: 2rem;
+        margin-block: 1.5rem;
+    }
+
+    .section-about .about-container p strong {
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+}
