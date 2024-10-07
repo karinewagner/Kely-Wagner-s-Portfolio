@@ -6,7 +6,7 @@ import About from "./about/About";
 import Benefits from "./benefits/Benefits";
 import AreaOfExpertise from "./areaOfExpertise/AreaOfExpertise";
 import MyAppointments from "./myAppointments/MyAppointments";
-import OnsiteOrOnline from "./onsiteOrOnline/onsiteOrOnline";
+import OnsiteOrOnline from "./onsiteOrOnline/OnsiteOrOnline";
 import Contact from "./contact/Contact";
 import Footer from "./footer/Footer";
 

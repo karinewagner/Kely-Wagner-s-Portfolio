@@ -1,62 +1,71 @@
+/* Estilo da seção de atendimentos */
 .section-my-appointments {
     text-align: left;
     max-width: 100rem;
     margin: 0 auto;
+    padding: 2rem;
 }
 
+/* Estilo do título */
 .section-my-appointments h3 {
     font-size: 2rem;
     line-height: 2.6rem;
     margin-bottom: 1rem;
+    color: #333;
 }
 
+/* Estilo da lista */
+.section-my-appointments ol {
+    margin-left: 1rem;
+    padding-left: 1rem;
+    list-style-type: decimal;
+}
+
+/* Estilo de cada item da lista */
+.section-my-appointments ol li {
+    margin-bottom: 2rem;
+}
+
+/* Estilo dos títulos dos itens */
+.section-my-appointments ol li strong {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    color: #444;
+}
+
+/* Estilo dos parágrafos */
 .section-my-appointments ol li p {
     font-size: 1.4rem;
     line-height: 1.8rem;
     text-align: justify;
-    margin-block: 1rem;
+    margin-top: 0.5rem;
+    color: #555;
 }
 
-.section-my-appointments ol li strong {
-    font-size: 1.6rem;
-    line-height: 1.8rem;
-}
-
+/* Responsividade para telas pequenas (celulares) */
 @media (max-width: 468px) {
     .section-my-appointments h3 {
         font-size: 1.6rem;
         line-height: 1.8rem;
-        margin-bottom: 1rem;
-    }
-
-    .section-my-appointments ol li p {
-        font-size: 1.2rem;
-        line-height: 1.6rem;
-        margin-block: 0.5rem;
     }
 
     .section-my-appointments ol li strong {
         font-size: 1.2rem;
         line-height: 1.6rem;
     }
+
+    .section-my-appointments ol li p {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
 }
 
+/* Responsividade para telas médias (tablets) */
 @media (min-width: 768px) {
     .section-my-appointments h3 {
-        font-size: 3rem;
-        line-height: 3.6rem;
-        margin-bottom: 2rem;
-    }
-
-    .section-my-appointments ol {
-        margin-block: 0.5rem;
-        margin-left: 1rem;
-    }
-
-    .section-my-appointments ol li {
-        font-size: 1.4rem;
-        line-height: 1.8rem;
-        margin-bottom: 1rem;
+        font-size: 2.5rem;
+        line-height: 3rem;
+        margin-bottom: 1.5rem;
     }
 
     .section-my-appointments ol li strong {
@@ -67,6 +76,26 @@
     .section-my-appointments ol li p {
         font-size: 1.6rem;
         line-height: 2rem;
+        margin-top: 0.5rem;
+    }
+}
+
+/* Estilo para telas grandes (desktop) */
+@media (min-width: 1024px) {
+    .section-my-appointments h3 {
+        font-size: 3rem;
+        line-height: 3.6rem;
+        margin-bottom: 2rem;
+    }
+
+    .section-my-appointments ol li strong {
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
+
+    .section-my-appointments ol li p {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
         margin-top: 0.5rem;
     }
 }

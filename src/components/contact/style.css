@@ -17,6 +17,19 @@
     margin-block: 0.5rem;
 }
 
+/* Estilo para o link de e-mail */
+.email-link {
+    color: inherit;       /* Mantém a cor do texto padrão */
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin-block: 0.5rem;
+}
+
+.email-link:hover {
+    text-decoration: underline; /* Se quiser, adicione um sublinhado ao passar o mouse */
+}
+
 @media (max-width: 468px) {
     .contact h2 {
         font-size: 1.4rem;

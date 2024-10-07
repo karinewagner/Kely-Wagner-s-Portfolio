@@ -1,11 +1,15 @@
+/* Seção principal da página */
 .section-title {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
     margin: 0 auto;
+    max-width: 1200px;
+    padding: 2rem;
 }
 
+/* Estilo do título e lista de informações */
 .section-title .title-container h2 {
     font-weight: 700;
     font-size: 2.8rem;
@@ -18,11 +22,12 @@
     margin-left: 1rem;
 }
 
-.section-title .title-container ol li{
+.section-title .title-container ol li {
     font-size: 1.4rem;
     line-height: 1.8rem;
 }
 
+/* Estilo dos ícones de redes sociais */
 .section-title .title-container ul {
     display: flex;
     margin-left: 2rem;
@@ -34,15 +39,19 @@
     height: 3rem;
 }
 
+/* Estilo da imagem de perfil */
 .section-title .img-profile img {
     width: 20rem;
     height: 20rem;
     border-radius: 50%;
+    object-fit: cover;
 }
 
-@media (max-width: 468px) {
+/* Responsividade para telas pequenas (celulares) */
+@media (max-width: 768px) {
     .section-title {
-        gap: 1rem;
+        flex-direction: column;
+        align-items: center;
     }
 
     .section-title .title-container h2 {
@@ -62,6 +71,7 @@
     }
 }
 
+/* Responsividade para telas médias (tablets) */
 @media (min-width: 768px) {
     .section-title .title-container h2 {
         font-size: 3rem;
@@ -85,6 +95,7 @@
     }
 }
 
+/* Estilo para telas grandes (desktop) */
 @media (min-width: 1024px) {
     .section-title .title-container h2 {
         font-size: 4.6rem;
@@ -97,7 +108,7 @@
         margin-left: 2rem;
     }
 
-    .section-title .title-container ol li{
+    .section-title .title-container ol li {
         font-size: 2rem;
         line-height: 2.4rem;
     }
