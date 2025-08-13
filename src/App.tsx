@@ -1,13 +1,12 @@
-import './App.css'
-import MyApp from "./components/index.tsx"
+import './App.css';
+import MyApp from "./components/index";
 
 function App() {
-
   return (
-      <>
-        <MyApp/>
-      </>
-  )
+    <>
+      <MyApp />
+    </>
+  );
 }
 
-export default App
+export default App;
