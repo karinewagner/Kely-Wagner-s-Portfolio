@@ -1,12 +1,11 @@
 import React from "react";
-import "./style.css";
 
 const Footer: React.FC = () => {
     return (
-        <section className="footer">
-            <p>Desenvolvido por Karine Wagner - 2024</p>
-        </section>
+        <footer className="pb-2 text-center">
+            <p className="text-verde-salvia text-lg font-medium">Desenvolvido por Karine Wagner - 2025</p>
+        </footer>
     );
-}
+};
 
 export default Footer;
