@@ -3,7 +3,7 @@ import ContactPicture from "../../assets/images/contact.jpg";
 
 const Contact: React.FC = () => {
     return (
-        <section className="relative text-left max-w-screen-lg mx-auto px-4 py-5 bg-off-white border-t-4 border-b-4 border-terracota rounded-lg overflow-hidden">
+        <section className="relative text-left max-w-screen mx-auto px-2 py-4 lg:px-4 lg:py-6 bg-off-white border-t-4 border-b-4 border-terracota rounded-lg overflow-hidden">
 
             <div className="absolute inset-0 z-0">
                 <img
@@ -19,14 +19,14 @@ const Contact: React.FC = () => {
                     Contato
                 </h2>
                 <div className="space-y-2">
-                    <h3 className="text-marrom font-bold text-xl ">
-                        Tel./Whatsapp: <span className="font-semibold text-lg">(66) 99974-5066</span>
+                    <h3 className="text-marrom font-bold text-xl lg:text-3xl">
+                        Tel./Whatsapp: <span className="font-semibold text-lg lg:text-2xl">(66) 99920-5832</span>
                     </h3>
-                    <h3 className="text-marrom font-bold text-xl">
+                    <h3 className="text-marrom font-bold text-xl lg:text-3xl">
                         E-mail:{" "}
                         <a
                             href="mailto:kelywagner@gmail.com.br"
-                            className="text-marrom font-semibold text-lg"
+                            className="text-marrom font-semibold text-lg lg:text-2xl"
                         >
                             kelywagner@gmail.com.br
                         </a>

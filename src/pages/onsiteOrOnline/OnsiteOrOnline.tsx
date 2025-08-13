@@ -16,7 +16,7 @@ const OnsiteOrOnline: React.FC = () => {
     ];
 
     return (
-        <section className="text-left max-w-screen-lg mx-auto px-2 py-4 bg-bege rounded-xl shadow-md">
+        <section className="text-left max-w-screen mx-auto px-2 py-4 lg:px-4 lg:py-6 bg-bege rounded-xl lg:rounded-3xl shadow-md">
             <h2 className="titleSection text-center">
                 Atendimentos<span> - Presencial/Online </span>
             </h2>
@@ -24,14 +24,14 @@ const OnsiteOrOnline: React.FC = () => {
                 {data.map((item, index) => (
                     <div 
                         key={index}
-                        className="flex gap-4 items-center w-full border-t  border-terracota pt-4"
+                        className="flex gap-4 items-center w-full border-t border-terracota p-4"
                     >
                         <img 
                             src={item.icon} 
                             alt={item.alt}
-                            className="ml-2 h-12 w-2"
+                            className="max-w-16 max-h-16 lg:max-w-28 lg:max-h-28"
                         />
-                        <p className="text-marrom text-lg md:text-lg w-full">{item.text}</p>
+                        <p className="text-marrom text-lg md:text-3xl w-full">{item.text}</p>
                     </div>
                 ))}
             </div>

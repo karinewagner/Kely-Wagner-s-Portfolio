@@ -16,22 +16,22 @@ const benefitsData = [
 
 const Benefits: React.FC = () => {
     return (
-        <section className="text-left max-w-screen-lg mx-auto px-2 pb-4">
-            <h2 className="titleSection ml-4">
+        <section className="text-left max-w-screen mx-auto px-2 py-4 lg:px-4 lg:py-6">
+            <h2 className="titleSection">
                 Benefícios
             </h2>
-            <div className="flex flex-wrap justify-between gap-4">
+            <div className="flex flex-wrap justify-between gap-4 lg:gap-6">
                 {benefitsData.map((benefit, index) => (
                     <div 
                         key={index}
-                        className="flex gap-6 items-center bg-bege shadow-md rounded-2xl p-4 w-full sm:w-[48%] md:w-[48%] lg:w-[32%]"
+                        className="flex gap-6 items-center bg-bege shadow-md rounded-2xl lg:rounded-3xl p-4 w-full "
                     >
                         <img 
                             src={benefit.icon} 
                             alt={`Ícone representando ${benefit.text}`} 
-                            className="h-12 w-2"
+                            className="max-w-16 max-h-16 lg:max-w-28 lg:max-h-28"
                         />
-                        <p className="text-marrom text-lg md:text-lg w-full">{benefit.text}</p>
+                        <p className="text-marrom text-lg md:text-3xl w-full">{benefit.text}</p>
                     </div>
                 ))}
             </div>
