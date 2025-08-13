@@ -11,18 +11,6 @@
 
   /* Tipografia */
   --font-sans: "Roboto", sans-serif;
-
-  /* Espaçamentos (opcional) */
-  --spacing-xs: 0.4rem;
-  --spacing-sm: 0.8rem;
-  --spacing-md: 1.6rem;
-  --spacing-lg: 2.4rem;
-  --spacing-xl: 3.2rem;
-
-  /* Bordas (opcional) */
-  --radius-sm: 0.4rem;
-  --radius-md: 0.8rem;
-  --radius-lg: 1.6rem;
 }
 
 /* Estilos globais adicionais */
@@ -45,29 +33,25 @@ a {
   transition: color 0.3s ease;
 }
 
-/* Listas */
-ul, li {
+li {
   list-style: none;
   list-style-type: none !important;
   padding-left: 0 !important;
 }
 
-/* Inputs focus */
-textarea:focus,
-input:focus,
 select:focus {
   box-shadow: none;
   border: none;
   outline: none;
 }
 
-/* Container principal */
 .tudo {
-  margin: 0 1.6rem;
+  margin: 0 2rem;
   display: flex;
   flex-direction: column;
   overflow: hidden;
   gap: 2rem;
+  max-width: 1200px;
 }
 
 main {
@@ -81,23 +65,21 @@ main {
   font-weight: bold;
   font-size: var(--text-3xl);
   line-height: var(--tw-leading, var(--text-4xl--line-height));
-  margin-bottom: calc(var(--spacing) * 5)
+  margin-bottom: calc(var(--spacing) * 5);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .tudo {
-    margin: 0 32px;
+    margin: 0 auto;
+  }
+
+  main {
+    gap: 4rem;
   }
 
   .titleSection {
-    font-size: var(--text-3xl);
-    line-height: var(--tw-leading, var(--text-3xl--line-height));
-  }
-}
-
-@media (min-width: 1025px) {
-  .tudo {
-    margin: 0 auto;
-    max-width: 1200px;
+    font-size: var(--text-6xl);
+    line-height: var(--tw-leading, var(--text-7xl--line-height));
+    margin-bottom: calc(var(--spacing) * 9);
   }
 }
