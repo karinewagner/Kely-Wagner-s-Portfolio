@@ -27,10 +27,10 @@ const MyApp: React.FC = () => {
                 <section id="benefits">
                     <Benefits />
                 </section>
-                <section id="appointments">
+                <section id="myAppointments">
                     <MyAppointments />
                 </section>
-                <section id="onsite-or-online">
+                <section id="onsiteOrOnline">
                     <OnsiteOrOnline />
                 </section>
                 <section id="contact">
