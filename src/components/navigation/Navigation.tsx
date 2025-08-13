@@ -9,11 +9,11 @@ interface MenuItem {
 
 const menuItems: MenuItem[] = [
     { title: 'about', label: 'Sobre mim', icon: 'pi pi-fw pi-user' },
-    { title: 'areaOfExpertise', label: 'Área de Atuação', icon: 'pi pi-fw pi-map' },
+    { title: 'myApproach', label: 'Abordagens', icon: 'pi pi-fw pi-map' },
     { title: 'benefits', label: 'Benefícios', icon: 'pi pi-fw pi-star' },
-    { title: 'myAppointments', label: 'Meus atendimentos', icon: 'pi pi-fw pi-calendar' },
-    { title: 'onsiteOrOnline', label: 'Presencial e/ou Online', icon: 'pi pi-fw pi-globe' },
-    { title: 'contact', label: 'Meus Contatos', icon: 'pi pi-fw pi-comments' }
+    { title: 'myAppointments', label: 'Atendimentos', icon: 'pi pi-fw pi-calendar' },
+    { title: 'onsiteOrOnline', label: 'Presencial/Online', icon: 'pi pi-fw pi-globe' },
+    { title: 'contact', label: 'Contatos', icon: 'pi pi-fw pi-comments' }
 ];
 
 const Navigation: React.FC = () => {
@@ -24,28 +24,25 @@ const Navigation: React.FC = () => {
         if (section) {
             section.scrollIntoView({ behavior: "smooth" });
         }
-        setIsOpen(false); // Fecha o menu após clicar
+        setIsOpen(false);
     };
 
     return (
-        <nav className="relative bg-off-white border-b-2 border-terracota shadow-sm px-6 py-4 z-50">
-            {/* Topo da navbar */}
-            <div className="flex items-center justify-between">
-                {/* Logo */}
-                <div className="flex items-center gap-3 w-full">
+        <nav className="relative bg-off-white border-b-2 border-terracota shadow-sm px-2 py-4 z-50">
+            <div className="flex items-center justify-between gap-4">
+                <div className="flex items-center gap-2">
                     <img
                         src={IconPsic}
                         alt="Ícone de cérebro com um coração azul"
-                        className="w-2 h-10 md:w-14 md:h-14"
+                        className="max-w-10 max-h-15"
                     />
-                    <h3 className="text-terracota font-extrabold text-xl md:text-2xl tracking-tight w-full">
+                    <h1 className="text-terracota font-extrabold text-2xl lg:text-4xl tracking-tight">
                         Kely Wagner Psicóloga
-                    </h3>
+                    </h1>
                 </div>
 
-                {/* Botão hamburguer (mobile) */}
                 <button
-                    className="md:hidden text-marrom"
+                    className="lg:hidden text-marrom"
                     onClick={() => setIsOpen(!isOpen)}
                     aria-label="Abrir menu"
                 >
@@ -73,30 +70,32 @@ const Navigation: React.FC = () => {
                         )}
                     </svg>
                 </button>
-            </div>
 
-            {/* Menu de navegação */}
-            <ul
-                className={`
-                    ${isOpen ? 'flex' : 'hidden'} 
-                    absolute md:static top-full left-0 w-full bg-off-white z-50 
-                    flex-col md:flex-row items-start md:items-center gap-2 md:gap-5 
-                    md:mt-0 p-4 md:p-0 shadow-md md:shadow-none border-t md:border-0 border-terracota
-                `}
-            >
-                {menuItems.map((item, index) => (
-                    <li key={index}>
-                        <button
-                            onClick={() => handleScroll(item.title)}
-                            className="flex items-center gap-2 text-marrom hover:bg-bege rounded p-1 transition-colors text-xl md:text-base lg:text-2xl w-full text-left"
-                            aria-label={`Ir para a seção ${item.label}`}
-                        >
-                            <i className={item.icon}></i>
-                            <span className="text-base md:text-base lg:text-lg">{item.label}</span>
-                        </button>
-                    </li>
-                ))}
-            </ul>
+                <ul
+                    className={`
+                        ${isOpen ? 'flex' : 'hidden'} 
+                    lg:flex
+                    lg:justify-end
+                    absolute lg:static top-full left-0 w-full lg:w-auto bg-off-white z-50 
+                    flex-col lg:flex-row items-start lg:items-center gap-3 lg:gap-5 
+                    p-4 lg:p-0 shadow-md lg:shadow-none border-t md:border-0 border-terracota
+                    `}
+                >
+                    {menuItems.map((item, index) => (
+                        <li key={index}>
+                            <button
+                                onClick={() => handleScroll(item.title)}
+                                className="flex items-center gap-2 text-marrom hover:bg-bege rounded p-1 
+                                transition-colors text-3xl w-full text-left"
+                                aria-label={`Ir para a seção ${item.label}`}
+                            >
+                                <i className={item.icon}></i>
+                                <span className="text-xl lg:text-2xl">{item.label}</span>
+                            </button>
+                        </li>
+                    ))}
+                </ul>
+            </div>
         </nav>
     );
 };
