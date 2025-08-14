@@ -10,7 +10,9 @@
   --color-off-white: #FFF8F2;
 
   /* Tipografia */
-  --font-sans: "Roboto", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  --font-libertinus: "Libertinus Sans", sans-serif;
+  --font-old-standard: "Old Standard TT", serif;
 }
 
 /* Estilos globais adicionais */
@@ -21,12 +23,11 @@
 }
 
 body {
-  font-family: var(--font-sans);
+  font-family: var(--font-old-standard);
   background-color: var(--color-off-white);
   color: var(--color-marrom);
 }
 
-/* Links padrão */
 a {
   cursor: pointer;
   text-decoration: none;
@@ -45,6 +46,7 @@ select:focus {
   outline: none;
 }
 
+/* Classes globais adicionais */
 .tudo {
   margin: 0 2rem;
   display: flex;
@@ -60,12 +62,22 @@ main {
   gap: 2rem;
 }
 
+.imgProfile {
+  opacity: 0.5;
+}
+
 .titleSection {
   color: var(--color-terracota);
   font-weight: bold;
   font-size: var(--text-3xl);
   line-height: var(--tw-leading, var(--text-4xl--line-height));
   margin-bottom: calc(var(--spacing) * 5);
+}
+
+@media (min-width: 500px) {
+  .imgProfile {
+    opacity: 0.9;
+  }
 }
 
 @media (min-width: 1200px) {

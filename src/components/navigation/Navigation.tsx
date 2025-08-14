@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import IconPsic from "../../assets/icons/icons-psychology.png";
+
+import Psychology from "../../assets/icons/psychology.svg";
 
 interface MenuItem {
     title: string;
@@ -9,7 +10,6 @@ interface MenuItem {
 
 const menuItems: MenuItem[] = [
     { title: 'about', label: 'Sobre mim', icon: 'pi pi-fw pi-user' },
-    { title: 'myApproach', label: 'Abordagens', icon: 'pi pi-fw pi-map' },
     { title: 'benefits', label: 'Benefícios', icon: 'pi pi-fw pi-star' },
     { title: 'myAppointments', label: 'Atendimentos', icon: 'pi pi-fw pi-calendar' },
     { title: 'onsiteOrOnline', label: 'Presencial/Online', icon: 'pi pi-fw pi-globe' },
@@ -29,14 +29,14 @@ const Navigation: React.FC = () => {
 
     return (
         <nav className="relative bg-off-white border-b-2 border-terracota shadow-sm px-2 py-4 z-50">
-            <div className="flex items-center justify-between gap-4">
-                <div className="flex items-center gap-2">
+            <div className="flex justify-between gap-4">
+                <div className="flex items-center gap-3">
                     <img
-                        src={IconPsic}
+                        src={Psychology}
                         alt="Ícone de cérebro com um coração azul"
-                        className="max-w-10 max-h-15"
+                        className="w-13 h-13"
                     />
-                    <h1 className="text-terracota font-extrabold text-2xl lg:text-4xl tracking-tight">
+                    <h1 className="text-marrom font-extrabold text-3xl lg:text-4xl tracking-tight mt-2">
                         Kely Wagner Psicóloga
                     </h1>
                 </div>
