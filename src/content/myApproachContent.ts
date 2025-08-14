@@ -1,7 +1,7 @@
 export const myApproachContent = {
     sections: [
         {
-            title: "Minha Abordagem",
+            title: "Abordagens",
             items: [
                 {
                     subtitle: "Terapia Cognitivo Comportamental:",

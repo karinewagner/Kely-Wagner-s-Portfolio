@@ -13,12 +13,13 @@ const OnsiteOrOnline: React.FC = () => {
         { icon: Proatividade, text: "50 minutos", alt: "Ícone de proatividade" },
         { icon: Resiliencia, text: "Ferramentas de Apoio", alt: "Ícone de resiliência" },
         { icon: Companherismo, text: "Individual e Particular", alt: "Ícone de companheirismo" },
+        { icon: Companherismo, text: "Presencial ou Online", alt: "Ícone de companheirismo" },
     ];
 
     return (
         <section className="text-left max-w-screen mx-auto px-2 py-4 lg:px-4 lg:py-6 bg-bege rounded-xl lg:rounded-3xl shadow-md">
             <h2 className="titleSection text-center">
-                Atendimentos<span> - Presencial/Online </span>
+                Atendimentos
             </h2>
             <div className="flex flex-col gap-4 mt-2">
                 {data.map((item, index) => (
