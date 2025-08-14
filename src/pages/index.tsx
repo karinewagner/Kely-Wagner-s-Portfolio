@@ -1,14 +1,13 @@
 import "../styles/globals.css";
 
-import Navigation from "./navigation/Navigation";
-import Home from "../pages/home/Home";
-import About from "../pages/about/About";
-import MyApproach from "../pages/myApproach/MyApproach";
-import Benefits from "../pages/benefits/Benefits";
-import MyAppointments from "../pages/myAppointments/MyAppointments";
-import OnsiteOrOnline from "../pages/onsiteOrOnline/OnsiteOrOnline";
-import Contact from "../pages/contact/Contact";
-import Footer from "./footer/Footer";
+import Navigation from "../components/navigation/Navigation";
+import Home from "./home/Home";
+import About from "./about/About";
+import Benefits from "./benefits/Benefits";
+import MyAppointments from "./myAppointments/MyAppointments";
+import OnsiteOrOnline from "./onsiteOrOnline/OnsiteOrOnline";
+import Contact from "./contact/Contact";
+import Footer from "../components/footer/Footer";
 
 const MyApp: React.FC = () => {
     return (
@@ -20,9 +19,6 @@ const MyApp: React.FC = () => {
                 </section>
                 <section id="about">
                     <About />
-                </section>
-                <section id="myApproach">
-                    <MyApproach />
                 </section>
                 <section id="benefits">
                     <Benefits />
