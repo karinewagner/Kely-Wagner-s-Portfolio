@@ -6,7 +6,7 @@
   --color-terracota: #E2725B;
   --color-bege: #F3E5D8;
   --color-marrom: #A0522D;
-  --color-verde-salvia: #B2AC88;
+  --color-verde-salvia: #64614e8c;
   --color-off-white: #FFF8F2;
 
   /* Tipografia */
@@ -53,13 +53,11 @@ select:focus {
   flex-direction: column;
   overflow: hidden;
   gap: 2rem;
-  max-width: 1200px;
 }
 
 main {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
 }
 
 .imgProfile {
@@ -83,10 +81,6 @@ main {
 @media (min-width: 1200px) {
   .tudo {
     margin: 0 auto;
-  }
-
-  main {
-    gap: 4rem;
   }
 
   .titleSection {
