@@ -1,5 +1,7 @@
 import React from "react";
+
 import { aboutContent } from "../../content/aboutContent";
+import { myApproachContent } from "../../content/myApproachContent";
 
 const About: React.FC = () => {
     return (
@@ -13,6 +15,16 @@ const About: React.FC = () => {
                             {section.text}
                         </p>
                     )}
+                </div>
+            ))}
+            {myApproachContent.sections.map((section, idx) => (
+                <div key={idx}>
+                    <h2 className="titleSection">{section.title}</h2>
+                    {section.items && section.items.map((item, i) => (
+                        <p key={i} className="text-marrom text-lg lg:text-3xl leading-relaxed text-justify mb-4">
+                            <strong className="text-verde-salvia text-xl lg:text-4xl">{item.subtitle}</strong> {item.description}
+                        </p>
+                    ))}
                 </div>
             ))}
         </section>
